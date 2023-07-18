@@ -204,22 +204,27 @@ footer{
         display: block;
         position: relative;
     }
-    .titulo i{
+    .titulo h1{
         display: block;
-        position: absolute;
-        top: 15%;
-        left: 90%;
+        width: 80%;
+        float: left;
+    }
+    .titulo i{
+        width: 10%;
+        display: block;
+        margin-top: 13px;
+        float: right;
         font-size: 25px;
         color: white;
         cursor: pointer;
     }
     header nav{
-        margin-top: 10px;
-        width: 100vw;
+        margin-top: 30px;
         margin: 0px;
     }
     #opcoes{
         display: none;
+        margin-top: 25px;
     }
     header a{
         display: block;
@@ -227,7 +232,6 @@ footer{
         height: 40px;
         color: white;
         text-align: center;
-        margin: auto;
         padding: 0;
         font-size: 20px;
         background-color: #d11a27;
