@@ -208,6 +208,7 @@ footer{
         display: block;
         width: 80%;
         float: left;
+        font-size: 1.4em;
     }
     .titulo i{
         width: 10%;
@@ -224,7 +225,7 @@ footer{
     }
     #opcoes{
         display: none;
-        margin-top: 25px;
+        margin-top: 30px;
     }
     header a{
         display: block;
