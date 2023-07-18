@@ -7,6 +7,7 @@
     <link rel="shortcut icon" href="video.ico" type="image/x-icon"> 
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
 </head>
 <body>
     <div class="cabeca">
@@ -22,8 +23,11 @@
         <div class="titulo">
             <h1>CINEMINHA DO ZÉ</h1>
             <nav>
-                <a href="#programacao">Programação</a>
-                <a href="#produtos">Produtos</a>
+                <span class="navegacao" onclick="navegar()"><i class="fa-solid fa-bars"></i></span>
+                <div id="opcoes">
+                    <a href="#programacao">Programação</a>
+                    <a href="#produtos">Produtos</a>
+                </div>
             </nav>
         </div>
     </header>
@@ -105,7 +109,7 @@
                 </span>
                 <span>
                     <img src="pipoca.jpg" alt="Foto de pepipoca">
-                    <p><strong>Venha!</strong> A melhor pipoca vc encontra aqui!</p>
+                    <p><strong>Venha!</strong> A melhor pipoca você encontra aqui!</p>
                 </span>
                 <span>
                     <img src="combos.jpg" alt="Foto de sanduíche com batatas fritas">
@@ -119,6 +123,15 @@
         <p>Tudo feito aqui foi feito por Eduardo Arruda</p>
         <p>Caso tenha algum problema me encontre no Github</p>
     </footer>
-
+    <script>
+        function navegar(){
+            let opcoes = document.getElementById('opcoes')
+            if (opcoes.style.display == 'block'){
+                opcoes.style.display = 'none'
+            } else{
+                opcoes.style.display = 'block'
+            }
+        }
+    </script>
 </body>
 </html>
