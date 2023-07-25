@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <header id="cabecalho">
+        <h1><i class="fa-solid fa-futbol"></i> Futebolesco</h1>
+        <div class="menu" onclick="menu()"><i class="fa-solid fa-bars" id="botao-menu"></i></div>
+            <ul id="itens">
+                <li>Seu time</li>
+                <li>Contato</li>
+                <li>Sobre nós</li>
+            </ul>
+    </header>
+    <main>
+        <section>
+            <h1>Resumo da Rodada</h1>
+            <p>No sábado, o Flamengo venceu o América-MG por 3 a 1 no Maracanã, com gols de Gabriel, Pedro e Luis Suárez. O time rubro-negro chegou aos 28 pontos e se manteve na terceira colocação, a 11 pontos do líder Botafogo. O Coelho, que descontou com Endrick, segue na zona de rebaixamento, com apenas 10 pontos.</p>
+            <p>O Palmeiras empatou em 1 a 1 com o Fortaleza no Allianz Parque, em um jogo equilibrado e com chances para os dois lados. O Verdão abriu o placar com Deyverson, mas cedeu o empate no segundo tempo, com um gol de Lima. O Palmeiras chegou aos 28 pontos e se manteve na quarta posição, enquanto o Fortaleza ficou com 23 pontos, na nona colocação1.</p>
+            <p>O Bahia surpreendeu o Corinthians na Arena Fonte Nova e venceu por 2 a 0, com gols de Gilberto e Bitello. O Tricolor baiano subiu para a décima sexta posição, com 14 pontos, e se afastou da zona de rebaixamento. O Timão, que teve um gol anulado pelo VAR, ficou com 16 pontos, na décima quarta posição.</p>
+            <p>O Cuiabá conquistou uma importante vitória fora de casa contra o São Paulo, por 1 a 0, no Morumbi. O único gol da partida foi marcado por Thiago Borbas, que aproveitou um rebote do goleiro Tiago Volpi. O Dourado chegou aos 22 pontos e subiu para a décima primeira posição, enquanto o Tricolor paulista ficou com 25 pontos, na quinta colocação.</p>
+            <p>O jogo mais emocionante da rodada foi entre o Grêmio e o Atlético-MG, na Arena do Grêmio. O time gaúcho saiu na frente com um gol de pênalti de Tiquinho Soares, mas viu o Galo virar o placar com dois gols de Hulk, um deles também de pênalti. No final da partida, o Grêmio buscou o empate com um gol de cabeça de Rodrigues. O resultado deixou o Grêmio na décima terceira posição, com 16 pontos, e o Atlético-MG na sexta posição, com 21 pontos.</p>
+            <p>No domingo, o líder Botafogo ampliou sua vantagem na ponta da tabela ao vencer o vice-líder Red Bull Bragantino por 2 a 0, no Nilton Santos. Os gols foram marcados por Vitor Roque, que chegou aos 8 gols no campeonato, e por Pedro Raul, que marcou contra seu ex-clube. O Fogão chegou aos impressionantes 39 pontos, abrindo uma vantagem de 10 pontos para o segundo colocado. O Bragantino ficou com 24 pontos, na sétima posição.</p>
+            <p>O Santos venceu o lanterna Vasco por 3 a 1, na Vila Belmiro, e se afastou da zona de rebaixamento. Os gols do Peixe foram marcados por Eduardo Sasha, duas vezes, e por Marcos Leonardo. O Vasco descontou com um gol de pênalti de Cano. O Santos chegou aos 16 pontos, na décima quinta posição, enquanto o Vasco ficou com apenas 9 pontos, na última colocação.</p>
+            <p>O Cruzeiro venceu o clássico mineiro contra o América-MG por 1 a 0, no Mineirão, e respirou na luta contra o rebaixamento. O gol da vitória foi marcado por Cristaldo, que aproveitou um cruzamento de Ayrton Lucas. O Cruzeiro chegou aos 22 pontos, na décima segunda posição, enquanto o América-MG ficou com 10 pontos, na décima nona posição.</p>
+            <p>O Coritiba venceu o Fluminense por 2 a 0, no Couto Pereira, e encerrou a rodada na oitava posição, com 23 pontos. Os gols foram marcados por Robson e Wanderson. O Fluminense, que teve um gol anulado pelo VAR, ficou com 25 pontos, na quarta posição.</p>
+            <p>A rodada 16 do Brasileirão 2023 teve um total de 24 gols marcados, uma média de 2,4 gols por partida. O artilheiro da competição é o atacante do Grêmio Tiquinho Soares, com 10 gols. O líder em assistências é o meia do Palmeiras Raphael Veiga, com 6 assistências.</p>
+        </section>
+        <aside>
+            <h2>Veja Também</h2>
+            <p><a href="#">Filipinas surpreende e consegue sua primeira vitória em Copas do Mundo</a></p>
+        </aside>
+    </main>
+
+    <script>
+        function menu(){
+            let menu = document.getElementById('itens')
+            if (menu.style.display == 'none'){
+                menu.style.display = 'block'
+            } else{
+                menu.style.display = 'none'
+            }
+        }
+    </script>
+</body>
+</html>
