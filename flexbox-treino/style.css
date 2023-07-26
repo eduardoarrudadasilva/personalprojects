@@ -8,22 +8,6 @@
     font-family: 'REM', sans-serif;
 }
 
-@media screen and (max-width: 600px) {
-    .menu:hover{
-        cursor: pointer;
-    }
-    
-    ul{
-        width: 100%;
-        text-align: center;
-        display: none;
-    }
-    
-    ul li:hover{
-        background-color: rgb(156, 146, 134);
-    }
-    
-}
 
 header{
     height: fit-content;
@@ -37,7 +21,7 @@ header{
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-
+    
     border-bottom: 1px solid black;
     background-color: green;
     color: rgb(255, 251, 0);
@@ -114,4 +98,30 @@ main aside h2{
 main aside a{
     text-decoration: underline;
     color: greenyellow;
+}
+@media screen and (max-width: 680px) {
+    .menu:hover{
+        cursor: pointer;
+    }
+
+    .menu{
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+    
+    ul{
+        width: 100%;
+        text-align: center;
+        display: none;
+    }
+    ul li{
+        width: 100%;
+        text-align: center;
+    }
+    
+    ul li:hover{
+        background-color: rgb(156, 146, 134);
+    }
+    
 }

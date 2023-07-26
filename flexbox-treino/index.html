@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
-<body>
+<body onresize="monitor()">
     <header id="cabecalho">
         <h1><i class="fa-solid fa-futbol"></i> Futebolesco</h1>
         <div class="menu" onclick="menu()"><i class="fa-solid fa-bars" id="botao-menu"></i></div>
@@ -41,6 +41,14 @@
         <p>Produzidopor Eduardo Arruda para treino do uso de flexbox</p>
     </footer>
     <script>
+        function monitor(){
+            let opcoes = document.getElementById('itens')
+            if (window.innerWidth >= 680){
+                opcoes.style.display = 'block'
+            } else{
+                opcoes.style.display = 'none'
+            }
+        }
         function menu(){
             let menu = document.getElementById('itens')
             if (menu.style.display == 'none'){
