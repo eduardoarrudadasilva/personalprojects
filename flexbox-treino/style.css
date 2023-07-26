@@ -118,10 +118,18 @@ main aside a{
     ul li{
         width: 100%;
         text-align: center;
+        display: none;
     }
     
     ul li:hover{
         background-color: rgb(156, 146, 134);
     }
     
+    main section{
+        width: 80%;
+    }
+
+    main section h1{
+        font-size: 2em;
+    }
 }
