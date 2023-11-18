@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <h3><i class="fa-solid fa-cloud-sun"></i>Climatempo</h3>
+    <div class="container">
+        <div class="header">
+            <div class="form">
+                <div class="text">
+                    <span><i class="fa-solid fa-location-dot"></i></span>
+                    <input type="text" name="cidade" id="cidade" placeholder="Nome da cidade">
+                </div>
+                <button id="search">
+
+                    <span><i class="fa-solid fa-magnifying-glass"></i></span>
+                </button>
+            </div>
+        </div>
+        <div id="weather-data" class="hide">
+            <h2><i class="fa-solid fa-location-dot"></i><span id="city"></span></h2>
+            <p><span id="temperatura"></span></p>
+            <div id="descricao-container">
+                <p id="descricao"></p>
+            </div>
+            <div id="detalhes">
+                <p id="umidade-container">
+                    <i class="fa-solid fa-droplet"></i>
+                    <span id="umidade"></span>
+                </p>
+                <p id="vento-container">
+                    <i class="fa-solid fa-wind"></i>
+                    <span id="vento"></span>
+                </p>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
