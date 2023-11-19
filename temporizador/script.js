@@ -1,5 +1,8 @@
-let minutos = 25
-let segundos = 0
+const pomodoroMinutos = 0
+const pomodoroSegundos = 2
+
+let minutos = pomodoroMinutos
+let segundos = pomodoroSegundos
 let ligado = false
 let interval
 const minutosEl= document.getElementById("minutos")
@@ -34,8 +37,8 @@ function controlador(){
 function resetar(){
     clearInterval(interval)
     ligado = false
-    minutos = 25
-    segundos = 0
+    minutos = pomodoroMinutos
+    segundos = pomodoroSegundos
     minutosEl.innerHTML = minutos
     segundosEl.innerHTML = '00'
     botao.innerHTML = "Iniciar"
