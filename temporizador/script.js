@@ -1,5 +1,5 @@
-const pomodoroMinutos = 0
-const pomodoroSegundos = 5
+const pomodoroMinutos = 25
+const pomodoroSegundos = 0
 
 let minutos = pomodoroMinutos
 let segundos = pomodoroSegundos
@@ -12,6 +12,7 @@ const minutosEl= document.getElementById("minutos")
 const segundosEl = document.getElementById("segundos")
 const pomodoroMax = 1500
 const pauseMax = 125
+const botao = document.querySelector('button#iniciar')
 
 function progressBar(){
     segtotal = (minutos*60) + segundos
@@ -22,14 +23,16 @@ function progressBar(){
 
 function temporizador(){
     interval = setInterval(()=>{
-        segundos -= 1
+        segundos -= 1 
         if(segundos <= 0){                    
             minutos -= 1
-            segundos = 59
+            if(segundos <= 0 && minutos<= 0){
+                resetar()
+            }else{
+                segundos = 59
+            }
         }
-        if(segundos <= 0 && minutos<= 0){
-            resetar()
-        }
+       
         progressBar()
         minutosEl.innerHTML = minutos
         segundosEl.innerHTML = segundos
@@ -37,7 +40,6 @@ function temporizador(){
 }
 
 function controlador(){
-    const botao = document.querySelector('button#iniciar')
     if (!ligado){
         ligado = true
         temporizador()
@@ -57,4 +59,5 @@ function resetar(){
     minutosEl.innerHTML = minutos
     segundosEl.innerHTML = '00'
     botao.innerHTML = "Iniciar"
+    window.alert('Acabou o tempo')
 }
