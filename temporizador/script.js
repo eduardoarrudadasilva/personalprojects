@@ -59,5 +59,4 @@ function resetar(){
     minutosEl.innerHTML = minutos
     segundosEl.innerHTML = '00'
     botao.innerHTML = "Iniciar"
-    window.alert('Acabou o tempo')
 }

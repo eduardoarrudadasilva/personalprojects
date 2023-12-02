@@ -1,5 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
+:root{
+    --cor1: #001231;
+    --cor2: #000230;
+    --cor3: #002130;
+    --cor4: #003030;
+    --cor5: #003030;
+}
 
 *{
     margin: 0;   
@@ -10,21 +17,32 @@
 body{
     height: 100vh;
     display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: center;
-    background-color: coral;
+    justify-content: top;
+    background-color: var(--cor4);
+    gap: 30px;
 }
 .container{
-    background-color: white;
+    background-color: var(--cor3);
+    width: 650px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    border-radius: 30px;
+    border: 1px solid white;
 }
 
 .timer{
     background-color: cadetblue;
     position: relative;
-    height: 200px;
-    width: 200px;
+    height: 360px;
+    width: 360px;
     border-radius: 50%;
-    background: conic-gradient(cadetblue 0deg, rgb(226, 226, 226) 0deg);
+    background: conic-gradient(white 0deg, rgb(204, 204, 204) 0deg);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -33,12 +51,41 @@ body{
 .timer::before{
     content: "";
     position: absolute;
-    height: 180px;
-    width: 180px;
+    height: 320px;
+    width: 320px;
     border-radius: 50%;
     background-color: white;
 }
 
 .timer h3{
     position: relative;
+    font-size: 48px;
+}
+
+
+h1{
+    font-size: 64px;
+    margin-bottom: 50px;
+    margin-top: 50px;
+    color: white;
+}
+
+button{
+    font-size: 20px;
+    border-radius: 30px;
+    padding: 8px;
+    border: 1px solid white;
+    background-color: var(--cor5);
+    color: white;
+}
+
+.butoes{
+    padding: 20px;
+}
+
+
+@media screen  and (max-width:768px){
+    .container{
+        width: 400px;
+    }
 }

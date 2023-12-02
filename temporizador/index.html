@@ -7,12 +7,15 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <h1>Pomodoro</h1>
     <div class="container">
         <div class="timer" id="timer">
             <h3><span id="minutos">25</span> : <span id="segundos">00</span></h3>
         </div>
-        <button onclick="controlador()" id="iniciar">Iniciar</button>
-        <button onclick="resetar()">Resetar</button>
+        <div class="butoes">
+            <button onclick="controlador()" id="iniciar">Iniciar</button>
+            <button onclick="resetar()" id="resetar">Resetar</button>
+        </div>
     </div>
     <script src="script.js"></script>
 </body>
