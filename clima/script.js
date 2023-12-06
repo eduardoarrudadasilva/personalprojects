@@ -16,7 +16,6 @@ async function getWeatherData(cidade){
 
     const res = await fetch(apiWheaterURL)
     const data = await res.json()
-    console.log(data)
     return data
 }
 
